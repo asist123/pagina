@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#cfd3ec"/>
+      <stop offset="1" stop-color="#a6abd0"/>
+    </linearGradient>
+    <linearGradient id="tube" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fd0f5"/>
+      <stop offset="1" stop-color="#2a8fd0"/>
+    </linearGradient>
+    <filter id="b2"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+
+  <rect width="1920" height="1000" fill="url(#bg2)"/>
+
+  <!-- Estante -->
+  <rect x="0" y="720" width="1920" height="40" fill="#e9eaf5" opacity=".9"/>
+  <rect x="0" y="760" width="1920" height="240" fill="#f3f3fa" opacity=".85"/>
+
+  <!-- Microscopio -->
+  <g fill="#4a5088">
+    <rect x="300" y="680" width="360" height="40" rx="10"/>
+    <rect x="440" y="380" width="60" height="320" rx="14" transform="rotate(12 470 540)"/>
+    <rect x="380" y="260" width="90" height="240" rx="20" transform="rotate(-24 425 380)"/>
+    <rect x="360" y="580" width="220" height="24" rx="8"/>
+  </g>
+  <circle cx="610" cy="640" r="34" fill="#2f5fbf"/>
+
+  <!-- Tubos de ensayo -->
+  <g>
+    <g transform="translate(900 430)">
+      <rect width="60" height="290" rx="30" fill="#fff" opacity=".4"/>
+      <rect x="6" y="120" width="48" height="164" rx="24" fill="url(#tube)"/>
+    </g>
+    <g transform="translate(990 400)">
+      <rect width="60" height="320" rx="30" fill="#fff" opacity=".4"/>
+      <rect x="6" y="160" width="48" height="154" rx="24" fill="#6b8cf0"/>
+    </g>
+    <g transform="translate(1080 450)">
+      <rect width="60" height="270" rx="30" fill="#fff" opacity=".4"/>
+      <rect x="6" y="90" width="48" height="174" rx="24" fill="#8fd6c9"/>
+    </g>
+  </g>
+
+  <!-- Frascos desenfocados -->
+  <g filter="url(#b2)" opacity=".8">
+    <rect x="1300" y="470" width="170" height="250" rx="26" fill="#7f84b5"/>
+    <rect x="1520" y="420" width="200" height="300" rx="30" fill="#9296c4"/>
+    <ellipse cx="1260" cy="860" rx="70" ry="30" fill="#3d73d6"/>
+    <ellipse cx="1500" cy="880" rx="64" ry="28" fill="#3d73d6"/>
+  </g>
+
+  <!-- Matraz erlenmeyer -->
+  <path d="M1190 440 L1250 440 L1250 520 L1320 700 Q1330 720 1310 720 L1130 720 Q1110 720 1120 700 L1190 520 Z" fill="#ffffff" opacity=".45" stroke="#fff" stroke-width="4"/>
+  <path d="M1155 640 L1285 640 L1312 710 Q1316 718 1306 718 L1134 718 Q1124 718 1128 710 Z" fill="url(#tube)" opacity=".9"/>
+</svg>
