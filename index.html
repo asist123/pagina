@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Tu Nombre">
+  <meta name="keywords" content="laboratorio, doctores, asistentes de laboratorio, salud, análisis clínicos">
+  <meta name="description" content="Labsky: laboratorio clínico con doctores expertos y asistentes de laboratorio. Página de inicio responsive con Bootstrap y BEM.">
+  <title>Labsky | Home</title>
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Lexend:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+  
+  <div class="topbar">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 d-none d-lg-block">
+          <ul class="topbar__info">
+            <li class="topbar__item">
+              <i class="bi bi-geo-alt-fill topbar__icon"></i>
+              <a class="topbar__link" href="https://www.google.com/maps/search/?api=1&query=123+Street+New+York+USA" target="_blank" rel="noopener">123 Street, New York, USA</a>
+            </li>
+            <li class="topbar__item">
+              <i class="bi bi-clock-fill topbar__icon"></i>Mon-Sat 09am-5pm, Sun Closed
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-5 text-center text-lg-end">
+          <ul class="topbar__links">
+            <li class="topbar__link-item"><a class="topbar__link" href="#contact">Career</a></li>
+            <li class="topbar__link-item"><a class="topbar__link" href="#contact">Support</a></li>
+            <li class="topbar__link-item"><a class="topbar__link" href="#" data-bs-toggle="modal" data-bs-target="#termsModal">Terms</a></li>
+            <li class="topbar__link-item"><a class="topbar__link" href="#" data-bs-toggle="modal" data-bs-target="#faqModal">FAQs</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <header class="header" id="home">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4 d-none d-md-block">
+          <a class="contact contact--call" href="tel:+0123456789">
+            <i class="bi bi-telephone-inbound contact__icon"></i>
+            <div class="contact__text">
+              <h5 class="contact__title">Call Now</h5>
+              <span class="contact__data">+012 345 6789</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+          <a href="#home" class="logo">Lab<span class="logo__accent">sky</span></a>
+        </div>
+        <div class="col-md-4 d-none d-md-block">
+          <a class="contact contact--mail" href="mailto:info@example.com">
+            <i class="bi bi-envelope contact__icon"></i>
+            <div class="contact__text">
+              <h5 class="contact__title">Mail Now</h5>
+              <span class="contact__data">info@example.com</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p>cambio prueba</p>
+    </div>
+    <div class="nav-wrap">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg menu">
+          <button class="navbar-toggler menu__toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Abrir menú">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav menu__list">
+              <li class="nav-item"><a class="nav-link menu__link menu__link--active" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link menu__link" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link menu__link" href="#services">Services</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link menu__link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                <ul class="dropdown-menu menu__dropdown">
+                  <li><a class="dropdown-item" href="#team">Our Team</a></li>
+                  <li><a class="dropdown-item" href="#contact">Appointment</a></li>
+                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#faqModal">FAQs</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link menu__link" href="#contact">Contact</a></li>
+            </ul>
+            <div class="social ms-lg-auto">
+              <a class="social__btn" href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a class="social__btn" href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+              <a class="social__btn" href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a class="social__btn" href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active hero__slide hero__slide--one">
+            <div class="container hero__content">
+              <div class="row justify-content-end">
+                <div class="col-lg-9 text-end">
+                  <h1 class="hero__title">Expet Doctors &amp; Lab Assistants</h1>
+                  <p class="hero__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget,
+                    ultrices pulvinar tortor. Quisque vel lorem porttitor, malesuada arcu quis, fringilla risus.
+                  </p>
+                  <a href="#about" class="hero__btn">Explore More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item hero__slide hero__slide--two">
+            <div class="container hero__content">
+              <div class="row justify-content-end">
+                <div class="col-lg-9 text-end">
+                  <h1 class="hero__title">Modern Lab &amp; Equipment</h1>
+                  <p class="hero__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget,
+                    ultrices pulvinar tortor. Quisque vel lorem porttitor, malesuada arcu quis, fringilla risus.
+                  </p>
+                  <a href="#services" class="hero__btn">Our Services</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev hero__arrow hero__arrow--prev" type="button"
+          data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Anterior">
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        <button class="carousel-control-next hero__arrow hero__arrow--next" type="button"
+          data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Siguiente">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="section__tag">About Us</span>
+            <h2 class="section__title">Trusted Laboratory Care With Expert Professionals</h2>
+            <p class="section__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget,
+              ultrices pulvinar tortor. Quisque vel lorem porttitor, malesuada arcu quis, fringilla risus.
+            </p>
+            <ul class="about__list">
+              <li class="about__item"><i class="bi bi-check-circle-fill about__check"></i>Certified doctors and lab assistants</li>
+              <li class="about__item"><i class="bi bi-check-circle-fill about__check"></i>Modern and sterile equipment</li>
+              <li class="about__item"><i class="bi bi-check-circle-fill about__check"></i>Fast and accurate results</li>
+            </ul>
+            <a href="#contact" class="hero__btn">Book Appointment</a>
+          </div>
+          <div class="col-lg-6">
+            <div class="row g-4">
+              <div class="col-6">
+                <div class="stat">
+                  <span class="stat__number" data-target="15">0</span><span class="stat__plus">+</span>
+                  <p class="stat__label">Years of Experience</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat">
+                  <span class="stat__number" data-target="120">0</span><span class="stat__plus">+</span>
+                  <p class="stat__label">Expert Doctors</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat">
+                  <span class="stat__number" data-target="5000">0</span><span class="stat__plus">+</span>
+                  <p class="stat__label">Happy Patients</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat">
+                  <span class="stat__number" data-target="30">0</span><span class="stat__plus">+</span>
+                  <p class="stat__label">Lab Tests</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section section--gray services" id="services">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section__tag">Our Services</span>
+          <h2 class="section__title">What We Offer</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <article class="service">
+              <i class="bi bi-droplet-half service__icon"></i>
+              <h3 class="service__title">Blood Tests</h3>
+              <p class="service__text">Complete blood count and specialized analysis with fast results.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="service">
+              <i class="bi bi-virus service__icon"></i>
+              <h3 class="service__title">Microbiology</h3>
+              <p class="service__text">Cultures and detection of bacteria, viruses and other pathogens.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="service">
+              <i class="bi bi-heart-pulse service__icon"></i>
+              <h3 class="service__title">Cardiac Profile</h3>
+              <p class="service__text">Cholesterol, enzymes and markers to take care of your heart.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="service">
+              <i class="bi bi-capsule service__icon"></i>
+              <h3 class="service__title">Pharmacology</h3>
+              <p class="service__text">Drug monitoring and toxicology studies with certified methods.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="service">
+              <i class="bi bi-eyedropper service__icon"></i>
+              <h3 class="service__title">Home Sampling</h3>
+              <p class="service__text">Our lab assistants collect your samples safely at your home.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="service">
+              <i class="bi bi-file-earmark-medical service__icon"></i>
+              <h3 class="service__title">Online Results</h3>
+              <p class="service__text">Receive your results by email, anytime and from any device.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
